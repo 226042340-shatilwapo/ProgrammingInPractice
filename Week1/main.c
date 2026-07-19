@@ -1,6 +1,32 @@
 #include <stdio.h>
-int main()
-{
-printf("Hello World\n");
-return 0;
+
+int main() {
+
+    char municipality[50];
+    char mayor[50];
+    int population;
+
+    printf("========================================\n");
+    printf("Municipal Financial Management System\n");
+    printf("========================================\n");
+
+    printf("Welcome to Windhoek Municipality\n\n");
+
+    printf("Enter Municipality Name:\n ");
+    scanf("%49s", &municipality);
+
+    printf("Enter Mayor's Name:\n ");
+    scanf("%49s", &mayor);
+
+    printf("Enter Population:\n ");
+    scanf("%d", &population);
+
+    printf("\n========================================\n");
+    printf("MUNICIPALITY REPORT\n");
+    printf("========================================\n");
+    printf("Municipality Name:%s\n", municipality);
+    printf("Mayor's Name:%s\n", mayor);
+    printf("Population:%d\n", population);
+
+    return 0;
 }
